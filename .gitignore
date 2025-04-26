@@ -1,0 +1,14 @@
+a.out
+*.o
+*.out
+rough*
+test
+.vscode
+.clang-format
+
+polymorphism
+deepCopy
+abstractClass
+interface
+
+README.md
