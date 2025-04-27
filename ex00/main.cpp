@@ -50,13 +50,13 @@ int main() {
 
     // Additional tests:
     std::cout << "-----------------------" << '\n';
-    std::cout << BOLDUNDERLINE << "Additional tests:" << RESET << '\n';
 
-    const Animal animal{"An animal"};
-    Dog const dog;
-    Cat cat;
+    const Animal animal{ "An animal" };
+    Dog const    dog;
+    Cat          cat;
 
     std::cout << "-----------------------" << '\n';
+    std::cout << BOLDUNDERLINE << "Additional tests:" << RESET << '\n';
 
     std::cout << GREEN << animal.getType() << " says: ";
     animal.makeSound();

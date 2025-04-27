@@ -20,8 +20,9 @@ class Animal {
     Animal& operator=( const Animal& animal );
     virtual ~Animal();
 
-    virtual void       makeSound() const;
-    const std::string& getType() const;
+    virtual void              makeSound() const;
+    virtual const std::string getFirstThought() const;
+    const std::string&        getType() const;
 
   protected:
     std::string type;
