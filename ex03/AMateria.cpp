@@ -25,8 +25,6 @@ AMateria::AMateria( std::string const& type ) : mType{ type } {
     std::cout << "AMateria class string constructor called" << '\n';
 }
 
-//[...]
-
 std::string const& AMateria::getType() const {
     return mType;
 }

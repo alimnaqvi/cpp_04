@@ -15,6 +15,8 @@ Character::Character( const Character& other ) : mName{ other.mName } {
         // clone the other's inventory (check for NULL before dereferencing)
         if ( other.mInventory[i] )
             mInventory[i] = other.mInventory[i]->clone();
+        else
+            mInventory[i] = nullptr;
     }
 }
 
@@ -27,9 +29,12 @@ Character& Character::operator=( const Character& other ) {
         for ( int i = 0; i < 4; ++i ) {
             // delete own inventory first
             delete mInventory[i];
+            mInventory[i] = nullptr;
             // clone the other's inventory (check for NULL before dereferencing)
             if ( other.mInventory[i] )
                 mInventory[i] = other.mInventory[i]->clone();
+            else
+                mInventory[i] = nullptr;
         }
     }
 
@@ -42,6 +47,7 @@ Character::~Character() {
     for ( int i = 0; i < 4; ++i ) {
         // delete own inventory at destruction
         delete mInventory[i];
+        mInventory[i] = nullptr;
     }
 }
 

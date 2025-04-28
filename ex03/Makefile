@@ -1,6 +1,6 @@
 NAME = interface
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++17# -g -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -std=c++17
 
 SRCS = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 OBJS = $(SRCS:.cpp=.o)

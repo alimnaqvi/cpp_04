@@ -9,7 +9,7 @@ class MateriaSource : public IMateriaSource {
     MateriaSource();
     MateriaSource( const MateriaSource& other );
     MateriaSource& operator=( const MateriaSource& other );
-    ~MateriaSource();
+    ~MateriaSource() override;
 
     // Required member functions
     void      learnMateria( AMateria* materia ) override;

@@ -12,7 +12,7 @@ class Character : public ICharacter {
     Character();
     Character( const Character& other );
     Character& operator=( const Character& other );
-    ~Character();
+    ~Character() override;
 
     // Constructor taking Character name as parameter
     Character( const std::string& initName );
@@ -24,7 +24,7 @@ class Character : public ICharacter {
     void               use( int idx, ICharacter& target ) override;
 
     // Additional functionality (memory management)
-    bool inventoryIsFull();
+    bool      inventoryIsFull();
     AMateria* getAddressAtIdx( int idx );
 
   private:

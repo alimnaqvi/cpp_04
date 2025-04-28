@@ -15,6 +15,8 @@ MateriaSource::MateriaSource( const MateriaSource& other ) {
         // clone the other's inventory (check for NULL before dereferencing)
         if ( other.mLearnedMateria[i] )
             mLearnedMateria[i] = other.mLearnedMateria[i]->clone();
+        else
+            mLearnedMateria[i] = nullptr;
     }
 }
 
@@ -25,9 +27,12 @@ MateriaSource& MateriaSource::operator=( const MateriaSource& other ) {
         for ( int i = 0; i < 4; ++i ) {
             // delete own inventory first
             delete mLearnedMateria[i];
+            mLearnedMateria[i] = nullptr;
             // clone the other's inventory (check for NULL before dereferencing)
             if ( other.mLearnedMateria[i] )
                 mLearnedMateria[i] = other.mLearnedMateria[i]->clone();
+            else
+                mLearnedMateria[i] = nullptr;
         }
     }
 
@@ -40,6 +45,7 @@ MateriaSource::~MateriaSource() {
     for ( int i = 0; i < 4; ++i ) {
         // delete own inventory at destruction
         delete mLearnedMateria[i];
+        mLearnedMateria[i] = nullptr;
     }
 }
 

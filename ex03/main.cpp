@@ -152,10 +152,10 @@ int main() {
     // Deep copy tests for Character class
     *player2 = player1;
 
-    ICharacter* deepPlayer1 {new Character{*player2}};
-    ICharacter* deepPlayer2 {new Character{player1}};
-    Character* deepPlayer3 {new Character{}};
-    Character deepPlayer4;
+    ICharacter* deepPlayer1{ new Character{ *player2 } };
+    ICharacter* deepPlayer2{ new Character{ player1 } };
+    Character*  deepPlayer3{ new Character{} };
+    Character   deepPlayer4;
     deepPlayer4 = *deepPlayer3;
 
     // Deep copy tests for Materia class
@@ -163,11 +163,11 @@ int main() {
     AMateria* deepCopy1{ new Ice{ *deepTest1 } };
 
     AMateria* deepTest2{ new Cure{} };
-    AMateria*     deepCopy2{ new Cure() };
-    deepCopy2 = deepTest2;
+    AMateria* deepCopy2{ new Cure() };
+    *deepCopy2 = *deepTest2;
 
     Ice* deepTest3{ new Ice };
-    Ice*     deepCopy3{ new Ice };
+    Ice* deepCopy3{ new Ice };
     *deepCopy3 = *deepTest3;
 
     // Clean up
