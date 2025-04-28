@@ -9,11 +9,11 @@ class Cure : public AMateria {
     Cure();
     Cure( const Cure& other );
     Cure& operator=( const Cure& other );
-    ~Cure();
+    ~Cure() override;
 
     Cure( std::string const& type );
 
-    AMateria* clone() const;
+    AMateria* clone() const override;
     void      use( ICharacter& target ) override;
 };
 

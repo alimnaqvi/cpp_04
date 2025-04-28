@@ -4,6 +4,8 @@
 #include "AMateria.h"
 #include <string>
 
+class AMateria;
+
 class IMateriaSource {
   public:
     virtual ~IMateriaSource() {}

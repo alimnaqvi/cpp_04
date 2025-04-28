@@ -74,7 +74,7 @@ void Character::use( int idx, ICharacter& target ) {
     if ( mInventory[idx] )
         mInventory[idx]->use( target );
     else
-        std::cout << "Slot " << idx << " is empty!" << '\n';
+        std::cout << "Slot with index " << idx << " is empty!" << '\n';
 }
 
 bool Character::inventoryIsFull() {

@@ -12,8 +12,8 @@ class MateriaSource : public IMateriaSource {
     ~MateriaSource();
 
     // Required member functions
-    void      learnMateria( AMateria* materia );
-    AMateria* createMateria( std::string const& type );
+    void      learnMateria( AMateria* materia ) override;
+    AMateria* createMateria( std::string const& type ) override;
 
     // Additional functionality (memory management)
     bool slotsAreFull();

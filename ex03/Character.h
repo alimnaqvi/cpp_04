@@ -18,10 +18,10 @@ class Character : public ICharacter {
     Character( const std::string& initName );
 
     // Required member functions
-    std::string const& getName() const;
-    void               equip( AMateria* m );
-    void               unequip( int idx );
-    void               use( int idx, ICharacter& target );
+    std::string const& getName() const override;
+    void               equip( AMateria* m ) override;
+    void               unequip( int idx ) override;
+    void               use( int idx, ICharacter& target ) override;
 
     // Additional functionality (memory management)
     bool inventoryIsFull();

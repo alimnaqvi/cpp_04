@@ -1,6 +1,6 @@
 #include "Cure.h"
 
-Cure::Cure() : AMateria{ "Cure" } {
+Cure::Cure() : AMateria{ "cure" } {
     std::cout << "Cure class default constructor called" << '\n';
 }
 

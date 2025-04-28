@@ -9,11 +9,11 @@ class Ice : public AMateria {
     Ice();
     Ice( const Ice& other );
     Ice& operator=( const Ice& other );
-    ~Ice();
+    ~Ice() override;
 
     Ice( std::string const& type );
 
-    AMateria* clone() const;
+    AMateria* clone() const override;
     void      use( ICharacter& target ) override;
 };
 

@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 
+class ICharacter;
+
 class AMateria {
   protected:
     std::string mType;
@@ -14,7 +16,7 @@ class AMateria {
     AMateria();
     AMateria( const AMateria& other );
     AMateria& operator=( const AMateria& other );
-    ~AMateria();
+    virtual ~AMateria();
 
     AMateria( std::string const& type );
 
