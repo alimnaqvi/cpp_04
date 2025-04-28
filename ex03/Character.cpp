@@ -67,10 +67,20 @@ void Character::equip( AMateria* m ) {
 }
 
 void Character::unequip( int idx ) {
+    if ( idx < 0 || idx > 3 ) {
+        std::cout << idx << " is not a valid index!" << '\n';
+        return;
+    }
+
     mInventory[idx] = nullptr;
 }
 
 void Character::use( int idx, ICharacter& target ) {
+    if ( idx < 0 || idx > 3 ) {
+        std::cout << idx << " is not a valid index!" << '\n';
+        return;
+    }
+
     if ( mInventory[idx] )
         mInventory[idx]->use( target );
     else
@@ -87,5 +97,10 @@ bool Character::inventoryIsFull() {
 }
 
 AMateria* Character::getAddressAtIdx( int idx ) {
+    if ( idx < 0 || idx > 3 ) {
+        std::cout << idx << " is not a valid index!" << '\n';
+        return nullptr;
+    }
+
     return mInventory[idx];
 }

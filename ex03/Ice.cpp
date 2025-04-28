@@ -21,12 +21,8 @@ Ice::~Ice() {
     std::cout << "Ice class destructor called" << '\n';
 }
 
-Ice::Ice( std::string const& type ) : AMateria{ type } {
-    std::cout << "Ice class string constructor called" << '\n';
-}
-
 AMateria* Ice::clone() const {
-    return new Ice{ mType };
+    return new Ice{};
 }
 
 void Ice::use( ICharacter& target ) {

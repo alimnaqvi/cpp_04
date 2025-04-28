@@ -11,8 +11,6 @@ class Ice : public AMateria {
     Ice& operator=( const Ice& other );
     ~Ice() override;
 
-    Ice( std::string const& type );
-
     AMateria* clone() const override;
     void      use( ICharacter& target ) override;
 };

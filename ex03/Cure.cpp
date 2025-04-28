@@ -21,12 +21,8 @@ Cure::~Cure() {
     std::cout << "Cure class destructor called" << '\n';
 }
 
-Cure::Cure( std::string const& type ) : AMateria{ type } {
-    std::cout << "Cure class string constructor called" << '\n';
-}
-
 AMateria* Cure::clone() const {
-    return new Cure{ mType };
+    return new Cure{};
 }
 
 void Cure::use( ICharacter& target ) {

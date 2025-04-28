@@ -13,14 +13,14 @@ class AMateria {
     //[...]
 
   public:
+    // Orthodox canonical form
     AMateria();
     AMateria( const AMateria& other );
     AMateria& operator=( const AMateria& other );
     virtual ~AMateria();
 
+    // String constructor as required by subject
     AMateria( std::string const& type );
-
-    //[...]
 
     std::string const& getType() const;  // Returns the materia type
 

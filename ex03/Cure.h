@@ -11,8 +11,6 @@ class Cure : public AMateria {
     Cure& operator=( const Cure& other );
     ~Cure() override;
 
-    Cure( std::string const& type );
-
     AMateria* clone() const override;
     void      use( ICharacter& target ) override;
 };
