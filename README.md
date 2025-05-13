@@ -1,4 +1,4 @@
-# C++ Module 03: Polymorphism, Abstract Classes, and Interfaces
+# C++ Module 04: Subtype Polymorphism, Abstract Classes, and Interfaces
 
 [![C++ Programming](https://img.shields.io/badge/Language-C++-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Makefile](https://img.shields.io/badge/Build-Make-brightgreen.svg)](https://www.gnu.org/software/make/)
