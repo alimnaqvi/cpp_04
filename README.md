@@ -19,6 +19,18 @@ This module explores fundamental concepts of Object-Oriented Programming in C++,
 *   **Dynamic Memory Management:** Using `new` and `delete` within classes and ensuring proper resource management (RAII principles).
 *   **Orthodox Canonical Form (OCF) / Rule of Three/Five:** Implementing destructors, copy constructors, and copy assignment operators correctly, especially when dynamic memory is involved.
 
+## Learning Resources
+
+*  **Virtual functions - LearnCpp.com:**
+   * [Pointers and references to the base class of derived objects](https://www.learncpp.com/cpp-tutorial/pointers-and-references-to-the-base-class-of-derived-objects/)
+   * [Virtual functions and polymorphism](https://www.learncpp.com/cpp-tutorial/virtual-functions/)
+   * [The override and final specifiers, and covariant return types](https://www.learncpp.com/cpp-tutorial/the-override-and-final-specifiers-and-covariant-return-types/)
+   * [Virtual destructors, virtual assignment, and overriding virtualization](https://www.learncpp.com/cpp-tutorial/virtual-destructors-virtual-assignment-and-overriding-virtualization/)
+   * [Pure virtual functions, abstract base classes, and interface classes](https://www.learncpp.com/cpp-tutorial/pure-virtual-functions-abstract-base-classes-and-interface-classes/)
+   * [Virtual base classes](https://www.learncpp.com/cpp-tutorial/virtual-base-classes/)
+ * [Shallow vs. deep copying](https://www.learncpp.com/cpp-tutorial/shallow-vs-deep-copying/)
+ * [The rule of three/five/zero](https://en.cppreference.com/w/cpp/language/rule_of_three.html)
+
 ---
 
 ## Exercise Breakdown
