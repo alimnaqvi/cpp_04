@@ -3,7 +3,10 @@
 [![C++ Programming](https://img.shields.io/badge/Language-C++-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Makefile](https://img.shields.io/badge/Build-Make-brightgreen.svg)](https://www.gnu.org/software/make/)
 
-This project is part of the C++ modules at 42 School.
+<p>
+  This project is part of the C++ modules at 42 School.
+  <img src="https://page-views-counter-534232554413.europe-west1.run.app/view?src=github.com&src_uri=/alimnaqvi/cpp_04" style="display: none;" />
+</p>
 
 This module explores fundamental concepts of Object-Oriented Programming in C++, focusing on inheritance, subtype polymorphism, abstract classes, and interfaces. Through a series of exercises, we implement these concepts to understand their practical applications and importance in C++ development, particularly concerning memory management and class design.
 
